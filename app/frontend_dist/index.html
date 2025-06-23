@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <script type="text/javascript" src="./static/charting_library/charting_library.standalone.js"></script>
+    <script type="module">
+        import { initOnReady } from './static/services/multipleWidget.js';
+
+        window.addEventListener('DOMContentLoaded', initOnReady, false);
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #131722;
+        }
+
+        #tv_chart_container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: #131722;
+        }
+    </style>
+</head>
+
+<body style="margin:0;">
+    <div id="tv_chart_container"></div>
+</body>
+
+</html>
