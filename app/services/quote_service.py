@@ -3,7 +3,7 @@ from typing import Dict, Union, List
 import ccxt.async_support as ccxt
 
 from app.database.market_cache import MarketCache
-from app.service.exchange_pool import ExchangePool
+from app.services.exchange_pool import ExchangePool
 
 class QuoteService:
     def __init__(self):

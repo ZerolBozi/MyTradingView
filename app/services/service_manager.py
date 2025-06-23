@@ -3,8 +3,8 @@ from typing import Optional
 from app.database.connection import DB
 from app.database.watch_list import WatchListDB
 from app.database.chart_storage import ChartStorageDB
-from app.service.quote_service import QuoteService
-from app.service.websocket_service import WebSocketService
+from app.services.quote_service import QuoteService
+from app.services.websocket_service import WebSocketService
 
 class ServiceManager:
     _watch_list_db: Optional[WatchListDB] = None
